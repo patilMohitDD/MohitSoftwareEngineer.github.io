@@ -108,13 +108,14 @@
 									font-weight: bold;	
 									color: skyblue;
  		 						}
-
+			
 							.work_paragraph-spacing {
-			  					margin-bottom: 0.2em; /* Adjust the value to decrease the space */
+			  					margin-bottom: 30px; /* Adjust the value to decrease the space */
 								}
 							.font_work {
 								font-family: Arial, sans-serif;
-								font-size: 14px;	
+								font-size: 14px;
+								color: #443;	
 								}
 							.work_descp {
 								color: #443;
@@ -128,44 +129,107 @@
 								font-size : 3.5em;
 							}
 						</style>
+						<!-- adding animation style for experince key words -->
+						<style>
+							body {
+							background-color: #ffffff; /* Replace with your original webpage background color */
+							transition: background-color 0.3s ease;
+							}
+							.animated-word {
+								color: whitesmoke;
+								font-size: 24px;
+								cursor: pointer;
+							}
+							.dropdown {
+							position: relative;
+							display: inline-flexbox;
+							}
+							@keyframes dropdown {
+							0% {
+								transform: translateY(-10px);
+								opacity: 60;
+							}
+							100% {
+								transform: translateY(0);
+								opacity: 10;
+							}
+							}
+
+							.information {
+								display: none;
+								color: #443;
+								font-size: 18.5px;
+								text-align: justify;
+								text-align-last: left;
+								line-height: 1.9;
+								position: align-self: baseline;
+								top: 100%;
+								left: 0;
+								padding: 10px;
+								animation-name: dropdown;
+								animation-duration: 0.1s;
+								animation-fill-mode: both;
+							}
+							.dropdown:hover .information {
+							display: block;
+							background-color: #ffffff;
+							}
+
+						</style>
 							<section id="two">
 								<div class="container">
 									<h2 class= "header_color"> 
 										<div style="text-align: center;" > Work Experience </div> 
 									</h2>
 									<ul>
-										<li class = "font"><a href = "https://www.linkedin.com/company/aspiration-investments/">Aspiration</a></li>
-										<p class= "font_work work_paragraph-spacing">May 2022 - August 2022,  <b>United States</b> </p>
-										<p class="work_descp">
-										- Developed CLI tool in Python3.10 integrated with E2E web services, generated global test data of 700-900 credit/debit accounts.<br>
-										- Designed an optimized agile workflow for connectivity with PostgreSQL with Python3.10 scripts, in collaboration with the 10-person QA team, to standardize back-end services.<br>
-										- Defined & Maintained APIs in Express.js of account holders datasets boasting user data retrieval rates from 75% to 90% using Locust.<br>
-										</p>
+										<div class = "dropdown">
+										<span class = "animated-word "><li class = "font"><a href = "https://www.linkedin.com/company/aspiration-investments/">Aspiration</a></li></span></li>
+										<p class= "font_work work_paragraph-spacing margin_for_ordered_list"><b>May 2022 - August 2022,  United States </b></p>
+										<div class="information">
+												<p>
+													  - Developed CLI tool in Python3.10 integrated with E2E web services, generated global test data of 700-900 credit/debit accounts.<br>
+													  - Designed an optimized agile workflow for connectivity with PostgreSQL with Python3.10 scripts, in collaboration with the 10-person QA team, to standardize back-end services.<br>
+													  - Defined & Maintained APIs in Express.js of account holders datasets boasting user data retrieval rates from 75% to 90% using Locust.<br>
+												</p>
+										
+										</div>
+										</div>
 
-										<li class = "font"><a href="https://www.linkedin.com/company/avanzens-consultancy-services-llp/">Avanzens Consultancy Services</a></li>
-										<p class= "font_work work_paragraph-spacing">June 2020 - November 2021,  <b>India</b></p>
-										<p class="work_descp">
-										- Engineered a server-side application (Alpha) using Java11 & SpringBoot2.3 to streamline the storage of 500K+ client data sets.<br>
-										- Co-ordinated with front-end teams for UI enhancements, inscribe feature requests, resolved & documented 30+ bug/project in Jira.<br>
-										- Collaborated in development of payment gateway, conducted unit testing (JUnit), drafted 13-17 code quality reports in SonarQube.<br>
-										- Modified Bash Scripts to facilitate the loading of Docker Images on Amazon ECR for deploying “Alpha” to AWS for containerization.
-										</p>
+										<div class ="dropdown">
+										<span class = "animated-word "><li class = "font"><a href="https://www.linkedin.com/company/avanzens-consultancy-services-llp/">Avanzens Consultancy Services</a></span></li>
+										<p class= "font_work work_paragraph-spacing"><b>June 2020 - November 2021,  India</b></p>
+										<div class="information">
+											<p>
+												- Engineered a server-side application (Alpha) using Java11 & SpringBoot2.3 to streamline the storage of 500K+ client data sets.<br>
+												- Co-ordinated with front-end teams for UI enhancements, inscribe feature requests, resolved & documented 30+ bug/project in Jira.<br>
+												- Collaborated in development of payment gateway, conducted unit testing (JUnit), drafted 13-17 code quality reports in SonarQube.<br>
+												- Modified Bash Scripts to facilitate the loading of Docker Images on Amazon ECR for deploying “Alpha” to AWS for containerization.
+											</p>
+										</div>
+										</div>
 
-										<li class = "font"><a href="https://economictimes.indiatimes.com/company/medians-pharma-private-limited/U74120MH2016PTC273089">Medians Pharma Pvt Ltd</a></li>
-										<p class= "font_work work_paragraph-spacing">November 2018 - June 2019,  <b>India</b></p>
-										<p class="work_descp">
+										<div class ="dropdown">
+										<span class = "animated-word "><li class = "font"><a href="https://economictimes.indiatimes.com/company/medians-pharma-private-limited/U74120MH2016PTC273089">Medians Pharma Pvt Ltd</a></span></li>
+										<p class= "font_work work_paragraph-spacing"><b>November 2018 - June 2019,  India</b></p>
+										<div  class="information">
+										<p>
 										- Designed 100-150 specialized SQL query sets in Oracle SQL 18c with integrated CRUD operations on distributor's database.<br>
     									- Performed data evaluations on distributed products data & scripted 20+ data reports using Crystal reports.
-										</p>		
+										</p>
+										</div>
+										</div>
 
-										<li class = "font">Government Educational Institute</li>
-										<p class= "font_work work_paragraph-spacing">January 2017 - October 2018,  <b>India</b></p>
-										<p class = "work_descp">
+										<div class ="dropdown">
+										<span class = "animated-word "><li class = "font">Government Educational Institute</span></li>
+										<p class= "font_work work_paragraph-spacing"><b>January 2017 - October 2018,   India</b></p>
+										<p class = "information">
 										- Developed Python3.6 based backend for user authentication & authorization, resulting in secure access to 300+ student records, 32 Pay slips, Tax receipts of faculties.<br>
 										- Built an admin interface utilizing Flask 0.12 framework, allowing management & control of the website's backend functionalities.<br>
 										- Created user forms, popups using JavaScript & CSS enabling new registrations & generating confirmation emails using an SMTP leading to a 25% higher click-through rate.<br>
 										- Designed a well-structured MySQL 5.7 database schema of students data, Courses resulting in a 30% reduction in data redundancy.
 										</p>
+										</div>
+										</div>
 										
 									</ul>
 								</div>
